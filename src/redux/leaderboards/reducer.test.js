@@ -42,7 +42,7 @@ describe("Testing leaderboardsReducer", () => {
 
     const resultState = leaderboardsReducer(
       initialState,
-      leaderboardUsersAction
+      leaderboardUsersAction,
     );
 
     expect(resultState).toEqual(leaderboardUsersAction.payload.leaderboards);
