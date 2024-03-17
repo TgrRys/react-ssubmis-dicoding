@@ -1,0 +1,41 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "cypress/globals": true
+  },
+  "extends": ["plugin:react/recommended", "airbnb"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "react-hooks", "cypress"],
+  "rules": {
+    "linebreak-style": "off",
+    "indent": "off",
+    "object-curly-newline": "off",
+    "import/no-extraneous-dependencies": "off",
+    "no-alert": "off",
+    "no-underscore-dangle": "off",
+    "import/prefer-default-export": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-props-no-spreading": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-uses-react": "off",
+    "react/prop-types": "off",
+    "react/no-danger": "off",
+    "quotes": "off",
+    "react/function-component-definition": "off",
+    "implicit-arrow-linebreak": "off",
+    "jsx-a11y/label-has-associated-control": [
+      2,
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ]
+  }
+}
